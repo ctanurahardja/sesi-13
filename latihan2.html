@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label>Warna: </label>
+        <input type="color" id="ubahwarna"/>
+    </div>
+
+    <div>
+        <label>Font: </label>
+        <input type="color" id="font" onchange="ChangeFont()"/>
+    </div>
+
+    <div>
+        <label>Date: </label>
+        <input type="date" id="date" onchange="ChangeDate()"/>
+    </div>
+
+    
+    <h1 id="id1">Have Fun!</h1>
+
+    <button type="button" 
+    onmouseover="document.getElementById('id1').style.color = 'Aqua'">
+    Click Me!</button>
+
+ <script>
+     var ubahwarna = document.getElementById("ubahwarna");
+
+     ubahwarna.addEventListener("change", (event) => {
+            document.body.style.backgroundColor = ubahwarna.value;
+        })
+
+      var font = document.getElementById("font");
+
+      function ChangeFont(){
+        document.body.style.color = font.value;
+      }
+
+     var date = document.getElementById("date");
+
+      function ChangeDate(){
+        document.body.style.date = date.value;
+      }
+
+ </script>  
+ 
+ 
+</body>
+</html>

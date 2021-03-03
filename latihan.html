@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel to Sydney</title>
+</head>
+<body>
+
+<div id= "gotosydney"
+       >Let's Go to Sydney</div>
+
+
+<h1 id="id1">Have Fun!</h1>
+
+<button type="button" 
+onclick="document.getElementById('id1').style.color = 'Blue'">
+Click Me!</button>
+
+   
+<p class="travel">
+    Sydney is the first stop on many Australian itineraries, and for good reason. It's an inviting blend of the exhilarating and easygoing. 
+</p>
+
+<p class="travel">
+    You can find excitement in the city, but drive just a few kilometres and you'll hit the golden sand of famous beaches like Bondi and Manly.
+</p>
+
+<p class="travel">
+    Plus, with endless nature at its doorstep, Sydney is the starting point for day trips serving up fresh air, unique flavours and locals who know a thing or two about living life to the fullest.
+</p>
+
+<p class="travel">
+    It's an inviting blend of the exhilarating and easygoing. You can have the sand between your toes in just minutes when you visit one of Sydney’s beautiful beaches. 
+</p>
+
+</body>
+
+<script>
+
+    var gotosydney = document.getElementById("gotosydney");
+    gotosydney.innerHTML = "Let's go to Sydney!";
+    gotosydney.style.backgroundColor = "orange";
+    gotosydney.style.textAlign = "center";
+
+    var travel = document.getElementsByClassName("travel");
+    travel[0].style.backgroundColor = "yellow"; 
+    travel[0].style.textAlign = "right";
+    travel[1].style.backgroundColor = "pink";
+    travel[2].style.backgroundColor = "aqua";
+    travel[2].style.textAlign = "center";
+    travel[3].style.backgroundColor = "green";
+
+</script>
+</html>
